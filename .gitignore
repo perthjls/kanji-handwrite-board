@@ -41,3 +41,9 @@ example
 # generated native folders
 /ios
 /android
+
+# auto-generated kanji stroke data (regenerate via `npm run build-kanji-data`)
+/src/data/kanjiPaths.generated.ts
+
+# kanji files (regenerate via `npm run build-kanji-data`)
+/src/data/kanji/*

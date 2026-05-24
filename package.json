@@ -34,6 +34,9 @@
   },
   "scripts": {
     "start": "expo start",
+    "build-kanji-data": "node ./scripts/build-kanji-data.mjs --force",
+    "postinstall": "node ./scripts/build-kanji-data.mjs",
+    "prestart": "node ./scripts/build-kanji-data.mjs",
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
